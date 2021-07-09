@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Autenticación</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
    <!-- Carga el núcleo de Firebase JS SDK -->
     <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
@@ -15,6 +15,8 @@
     <script src="js/init.js"></script>
   </head>
   <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <h1>Autenticación</h1>
     <h1>Sesión</h1>
     <fieldset>
@@ -28,6 +30,8 @@
     <figure><img id="avatar" alt="Avatar"></figure>
     <button type="button" onclick="terminaSesión()">Terminar Sesión</button>
     <footer>Copyright &copy; 2021 Veronica Gutierrez Aguirre.</footer>
+           </nav>
+    </header>
     <script>
       //@ts-check
       /** Conexión al sistema de autenticación de Firebase. */
